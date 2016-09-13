@@ -1,0 +1,34 @@
+﻿<Window x:Class="TestApp.E2_SingleVm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApp"
+        mc:Ignorable="d"
+        Title="PersonV" Height="300" Width="300"
+                xmlns:vm="clr-namespace:Example2_SingleVm;assembly=TestVm"
+        d:DataContext="{d:DesignInstance vm:PersonVm, IsDesignTimeCreatable=False}">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="First Name: "/>
+            <TextBox Width="100" Text="{Binding FirstName.V , UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Last Name: "/>
+            <TextBox Width="100" Text="{Binding LastName.V,  UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Full Name: "/>
+            <Label Content="{Binding FullName.V}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Swap" Command="{Binding SwapCommand}"/>
+            <Button Content="Swap Back" Command="{Binding SwapBackCommand}"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
