@@ -102,7 +102,7 @@ The you'll use your ViewModel in XAML as usuall.
 Please note that the value of the **Field** and **RoField** is in **.V** property
 
 ```xaml
- <TextBox Width="100" Text="{Binding FirstName.V }"/>
+ <TextBox Text="{Binding FirstName.V }"/>
  <Label Content="{Binding FullName.V}"/>
  <Button Content="Swap" Command="{Binding SwapCommand}"/>
 ```
