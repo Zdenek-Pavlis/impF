@@ -1,5 +1,5 @@
 # impF
-Prototype of [Elm] (http://elm-lang.org/) inspired imutable MVVM library for Wpf
+Prototype of [Elm] (http://elm-lang.org/) inspired immutable MVVM library for Wpf
 
 Example:
 
