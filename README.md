@@ -15,6 +15,7 @@ module Person =
             sprintf "%s %s" x.FirstName x.LastName
         member x.IsNotSwapped = 
             not x.IsSwapped
+            
     type Msg = 
         | First of string
         | Last of string
