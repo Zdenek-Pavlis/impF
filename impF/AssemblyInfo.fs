@@ -1,4 +1,4 @@
-﻿namespace Elpf.AssemblyInfo
+﻿namespace impF.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
