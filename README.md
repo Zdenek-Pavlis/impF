@@ -44,7 +44,7 @@ Define the initial state of the model
 
 Now put the model and the messages together in the update function 
 
-*Please note that it's a pure function twith this signature:*
+*Please note that it's a pure function with this signature:*
 
 **msg -> model -> model**
 
